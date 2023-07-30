@@ -85,13 +85,13 @@ const fetchRandomInfo = () => {
 
         // split types            
         let types = pokemon.type
-        typeElement.src = "/frontend/assets/types/" + types[0]['type']['name'] + ".png";
+        typeElement.src = "/assets/types/" + types[0]['type']['name'] + ".png";
         if (types.length !== 2) {
             secondTypeElement.style.removeProperty("width");
             secondTypeElement.style.removeProperty("height");
             secondTypeElement.src = " "
         } else {
-            secondTypeElement.src = "/frontend/assets/types/" + types[1]['type']['name'] + ".png";
+            secondTypeElement.src = "/assets/types/" + types[1]['type']['name'] + ".png";
         }
     });
 };
@@ -110,13 +110,13 @@ pokedex.addEventListener('click', (event) => {
 
     // split types            
     let types = pokemon.type
-    typeElement.src = "/frontend/assets/types/" + types[0]['type']['name'] + ".png";
+    typeElement.src = "/assets/types/" + types[0]['type']['name'] + ".png";
     if (types.length !== 2) {
         secondTypeElement.style.removeProperty("width");
         secondTypeElement.style.removeProperty("height");
         secondTypeElement.src = " "
     } else {
-        secondTypeElement.src = "/frontend/assets/types/" + types[1]['type']['name'] + ".png";
+        secondTypeElement.src = "/assets/types/" + types[1]['type']['name'] + ".png";
     }
 })
 
@@ -133,7 +133,7 @@ function filterData(event) {
     if (filteredPkmns.length == 0) {
         console.log(notfound)
         notfound.style.display = "inline"
-        notfound.innerHTML = `No result found! <br> <img src="/frontend/assets/missingno.png" alt="missingno">`
+        notfound.innerHTML = `No result found! <br> <img src="/assets/missingno.png" alt="missingno">`
 
     } else if (filteredPkmns.length !== 0) {
         notfound.style.display = "none"
