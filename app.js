@@ -32,3 +32,4 @@ window.addEventListener("scroll", (event) => {
         element.style.position = "sticky";
         element.style.top = "20px";
     }
+})
