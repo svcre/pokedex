@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Kanto Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1fe45eaa0.js" crossorigin="anonymous"></script>
+
+    <script src="app.js" type="module" defer></script>
+    <script src="app2.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <div class="parallax-overall">
+        <div class="logo">
+
+            <p class="desc">national kanto pokedex</p>
+
+            <h1>Pokédex</h1>
+
+            <a href="#dex" class="btn">find the perfect pkmn!</a>
+
+            <div class="sprites" id="random">
+                <img src="" style="z-index: 10000;">
+                <img src="" style="z-index: 10000;">
+                <img src="" style="z-index: 10000;">
+            </div>
+
+        </div>
+
+        <div class="raikou">
+            <img class="pic-left-nd" src="https://www.pokekalos.fr/assets/images/news/2018/04/03/AMQmF.png" alt="" />
+        </div>
+
+        <div class="lugia">
+            <img class="pic-right" src="https://www.pokepedia.fr/images/2/2b/Lugia_et_Ho-Oh_Distribution_2018.png?20180405064100" alt="" />
+        </div>
+
+        <div class="rayquaza">
+            <img class="pic-left" src="https://www.pokepedia.fr/images/thumb/3/36/Rayquaza-ROSA.png/623px-Rayquaza-ROSA.png?20141015004434" alt="" />
+        </div>
+
+        <div class="star">
+            <img class="pic-star" src="https://i.pinimg.com/originals/1a/8f/45/1a8f45557f4df6b9e0adf351d26a20ba.png" alt="" />
+        </div>
+
+    </div>
+
+    <div class="overall" id="dex">
+
+
+        <div class="left">
+
+
+
+            <section class="s1">
+                
+                <div class="notfound"></div>
+
+                <div class="s1-inner"><!-- generate dex --></div>
+
+
+            </section>
+        </div>
+
+
+        <div class="right">
+
+            <div class="search">
+
+                <input id="searchPkmn" class="input" placeholder="search a pkmn...">
+
+            </div>
+
+            <div class="idTextName">name</div>
+
+            <div class="artwork"></div>
+
+            <section class="s2">
+
+                <div class="nbDex-s2">#000</div>
+
+                <div class="pkmnid-row">
+                    <div class="frontSprite"></div>
+                    <div class="frontSpriteShiny"></div>
+                </div>
+
+                <div class="pkmnid-row">
+                    <div class="idType">
+                        <img src="" id="type">
+                        <img src="" id="secondType">
+                    </div>
+                </div>
+
+                <div class="pkmnid-row">
+                    <div class="pkmnidS" id="height">00 cm</div>
+                    <div class="pkmnidS" id="weight">00 kg</div>
+                </div>
+
+                <div class="pkmnidS" id="evo"></div>
+
+                <!-- <div class="flavor" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dicta consequuntur, nulla fugiat fugit at. Suscipit, illum nostrum, eveniet esse sapiente veritatis distinctio, perferendis cumque reprehenderit quis quasi perspiciatis
+                    excepturi.
+                </div> -->
+
+            </section>
+
+                <br><br>
+
+            <section class="s3">names, sprites and artworks belong to ©Pokémon, ®Nintendo. Other pictures are the property of their respective owners.</section>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
